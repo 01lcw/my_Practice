@@ -22,8 +22,9 @@ public class D2_LottoMain {
 			System.out.println(Arrays.toString(lottostore[i].getLots()));
 		}//for종료
 		
-		
+		D2_LottoCompare lottoCom=new D2_LottoCompare();
+		lottoCom.compareBall();
 		
 	}
-
+	
 }
