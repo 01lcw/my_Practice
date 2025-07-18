@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class D3_MagicSquareMain {
 	
 	public static void main(String[] args) {
-		D3_OddMagicSquare oddMagic=new D3_OddMagicSquare(5);
+		D3_OddMagicSquare oddMagic=new D3_OddMagicSquare(3);
 		oddMagic.make();
 		int [][] magic=oddMagic.magic;
 		for (int i = 0; i < magic.length; i++) {
@@ -14,9 +14,8 @@ public class D3_MagicSquareMain {
 			}
 			System.out.println();
 		}
-		oddMagic.check();
-		System.out.println();
+		oddMagic.magicPrint();
 	}
-	
+
 	
 }

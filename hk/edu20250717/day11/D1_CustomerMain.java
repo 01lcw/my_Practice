@@ -13,12 +13,12 @@ public class D1_CustomerMain {
 		D1_Customer customerLee2=new D1_Customer(10001,"이순신"); 
 		customerLee.bonusPoint=1000;
 		customerLee.calcPrice(15000);
-		System.out.println(customerLee2.toString()+price2);
+		System.out.println(customerLee2.toString());
 		
 		//자식의 타입으로 자식을 생성
 		D1_VIPCustomer customerKim=new D1_VIPCustomer(10002,"김유신",20001);
 		customerKim.bonusPoint=10000;
-		System.out.println(customerKim.toString()+price3);
+		System.out.println(customerKim.toString());
 		
 
 	}
