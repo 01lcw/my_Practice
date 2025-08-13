@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html03_이미지요소</title>
+</head>
+<body>
+<h1>이미지요소</h1>
+<p>이미지 요소는 웹페이지에 이미지를 표현할 때 사용한다.</p>
+<p>- 주의사항 사이즈 조절을 할 때 해상도를 고려해야 한다.</p>
+<p> img태그는 width속성, height속성을 가지고 있음
+	<a href="https://maplestory.nexon.com/promotion/event/2025/20250619/intro">
+	<img width="300px" height="300px" src="img/maple.png" alt="예티와 슬라임"/>
+	</a>
+</p>
+<p style="width:300px; height:300px; background-image: url('img/maple.png');"></p>
+<hr/>
+<h1>이미지 맵 사용하기</h1>
+<img usemap="#menu" src = "img/menu.png" width:300px; height: 300px;/>
+<map name="menu">
+	<area alt="대삼볶"
+		href="https://www.10000recipe.com/recipe/6919048?srsltid=AfmBOorYKCQRh23JBxj21n2CS68eQfVryXYc_N5Usc0MrgNVuZ1BbSDm"
+		shape="rect"
+		coords="12,110,177,295"
+		target="_blank"
+		/>
+	<area alt="스마덮"
+		href="https://www.google.com/search?gs_ssp=eJzj4tTP1TewzEouKzZg9OJ8M2fB2645r3f0AABbewns&q=%EC%9C%A0%ED%8A%9C%EB%B8%8C&oq=&gs_lcrp=EgZjaHJvbWUqCQgEEC4YJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAuGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQk1OTE4ajBqMTWoAgiwAgHxBa6YQ3Hi-OXw8QWumENx4vjl8A&sourceid=chrome&ie=UTF-8"
+		shape="rect"
+		coords="561,295,722,119"
+		target="_blank"
+		/>
+</map>
+</body>
+</html>
