@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html-6_폼 요소</title>
+</head>
+<body>
+	<h1>폼 요소</h1>
+	<h2>POST전송방식</h2>
+	<form action="html06_폼요소.html" method="post">
+		<!--  전송데이터 형식: key=value -> name=value -->
+		<input type="text" name="id" /> <input type="text" name="name" /> <input
+			type="submit" value="전송" />
+	</form>
+	<h2>GET전송방식</h2>
+	<!-- select...where deptno=? -->
+	<a href="html06_폼 요소.html?id=hk&name=한경&deptno=10">전송</a>
+	<hr />
+	<h1>폼 구성요소</h1>
+	<form action="html06_폼 요소.html" method="post">
+		<h3>회원가입</h3>
+		<fieldset>
+			<legend>기본정보</legend>
+			<p>
+				<label for="labelID">아이디:</label>
+				<input id="labelID" type="text" name="id" 
+									placeholder="아이디는 영문으로 입력" required="required"
+									pattern="[a-z]{3}" autocomplete="off">
+				
+			</p>
+			<p>
+				<label for="labelPW">비밀번호</label>
+				<input type="password" id="labelPW" name="pw" required="required">
+			</p>
+			<p>
+				<label for="labelBirth">생년월일:</label>
+				<input type="date" name="birth"required="required"/>
+			</p>
+		</fieldset>
+		<input type="submit" value="회원가입"/>
+	</form>
+</body>
+</html>
