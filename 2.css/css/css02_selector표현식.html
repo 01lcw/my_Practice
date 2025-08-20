@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css02_selector표현식</title>
+<style type="text/css">
+/* 타입 선택자 */
+#container1 p {
+	width: 800px;
+	background-color: orange;
+}
+
+#container1 strong {
+	color: red;
+}
+/* id선택자 */
+#container1 #a{
+ 	font-size:40px;
+ }
+/*  class선택자 */
+#container1 .c{
+ color:blue;
+ }
+ 
+/*  전체선택자 */
+#container1 *{margin: 10px; font-family:'굴림';}
+/* 다중선택자 */
+#container1 span, #container1 b, #container1 i{
+color: green;}
+
+/* 자식선택자 */
+#container1 .c>span{
+color: yellow;}
+/* 인접선택자 */
+#container1 h1+p{
+	background-color: yellow;
+}
+#container2 h1~p{
+background-color: blue;
+color: white;}
+/* 속성선택자 */
+span[title]{background-color: red;}
+span[title='현 대통령']{background-color: orange;}
+
+/* 가상 선택자 */
+#container2 a:link{
+	color:black;
+}
+#container2 a:visited{
+	color:red;
+}
+#container2 a:active{
+	color:yellow;
+	font-size: 20px;
+	background-color: green;
+}
+#container2 h1:hover{
+	background-color: yellow;
+	cursor: crosshair;
+}
+/* 수도 클래스 */
+p:first-child{
+	font-size: 40px;
+}
+#container2 p:after{
+/*	content:"뒤에 가상의 요소를 생성한다.";*/
+	content:"";
+	display:block;
+	width:200px;
+	height:200px;
+	background-color:orange;
+	border: 3px solid red;
+	border-radius: 100px;
+}
+</style>
+</head>
+<body>
+	<div id="container1">
+		<h1>
+			李대통령 국정지지도 <strong>51.1%…</strong> 보름만에 <strong id="a">12%P 하락</strong>
+		</h1>
+		<p><span>이재명 대통령</span> 국정 지지도가 지난주 대비 5.4%포인트, <span title="14일">2주만에</span> 12%포인트 하락해 50%대 초반대로 집계됐다.
+			여당인 <b>더불어민주당</b> 지지율도 한 주만에 8.5%포인트나 하락했다. 조국 전 법무장관 등이 포함된 <i>광복절특사 논란</i>과 주식
+			양도세 문제 등이 원인으로 지목됐다.
+			</p>
+		<p class="c">18일 여론조사기관 리얼미터에 따르면, 이 기관의 8월 2주차 정례 조사에서 이 <span>대통령의</span> 국정수행 평가 조사
+			결과는 '잘하고 있다'는 긍정 평가가 51.1%, '잘못하고 있다'는 부정 평가가 44.5%로 나타났다. 긍정 평가는 전주
+			대비 5.4%포인트 하락, 부정 평가는 반대로 6.3%포인트 상승했다.
+			</p>
+		<p class="c">리얼미터는 <span>"지지율 하락의 주요 원인으로</span> 광복절 특별사면 논란에 대한 실망감, 주식 양도세 논란, 헌정사 첫
+			대통령 부부 동시 수감으로 인한 정치적 부담이 복합적으로 작용한 것으로 보인다"며 "민주당 강성 지지층 중심의 정책이 중도층
+			이탈을 초래한 것으로 보인다"고 분석했다.
+			</p>
+			<h1>인접선택자 제목</h1>
+			<p>인접한 p태그</p>
+
+
+	</div>
+	
+<div id="container2">
+		<p>첫 번째 요소일 때 선택됨</p>
+		<h1>
+			李대통령 국정지지도 <strong>51.1%…</strong> 보름만에 <strong id="a">12%P 하락</strong>
+		</h1>
+		<p>
+		<span title="현 대통령">이재명</span> 대통령 국정 지지도가 지난주 대비 5.4%포인트, 2주만에 12%포인트 하락해 50%대 초반대로 집계됐다.
+			여당인 더불어민주당 지지율도 한 주만에 8.5%포인트나 하락했다. 조국 전 법무장관 등이 포함된 광복절특사 논란과 주식
+			양도세 문제 등이 원인으로 지목됐다.
+			</p>
+			<p class="c">18일 여론조사기관 리얼미터에 따르면, 이 기관의 8월 2주차 정례 조사에서 이 대통령의 국정수행 평가 조사
+			결과는 '잘하고 있다'는 긍정 평가가 51.1%, '잘못하고 있다'는 부정 평가가 44.5%로 나타났다. <a>긍정 평가</a>는 전주
+			대비 5.4%포인트 하락, 부정 평가는 반대로 6.3%포인트 상승했다.
+			</p>
+		<p class="c">
+		<a href="https://www.mediatoday.co.kr/news/articleView.html?idxno=328217">리얼미터</a>는 "지지율 하락의 주요 원인으로 광복절 특별사면 논란에 대한 실망감, 주식 양도세 논란, 헌정사 첫
+			대통령 부부 동시 수감으로 인한 정치적 부담이 복합적으로 작용한 것으로 보인다"며 "민주당 강성 지지층 중심의 정책이 중도층
+			이탈을 초래한 것으로 보인다"고 분석했다.
+			</p>
+
+
+	</div>
+</body>
+</html>

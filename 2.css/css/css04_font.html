@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css04_font.html</title>
+<style type="text/css">
+.c {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: small-caps;
+	line-height: 50px;
+	font-family: "맑은 고딕" 굴림;
+}
+
+.d {
+	font-variant: small-caps;
+}
+
+h1 {
+	background-color: yellow;
+	height: 100px;
+	/* 	vertical-align: middle;  */
+	text-align: center;
+	/*td요소, img등 특정요소만 적용됨*/
+	line-height: 100px;
+	text-align: center; /*행이 하나일 때 위아래 정렬 효과*/
+}
+/*
+	축약형 사용할 때 순서 규칙
+	1. font: [font-weight / font-size / font-variant]
+	2. font: [font-size / line-height]
+	3. font: [font-family]
+	font:1 2 3 순으로 작성해야 함
+*/
+.d {
+	font: bold italic small-caps 20px/50px '맑은 고딕';
+}
+</style>
+</head>
+<body>
+	<h1>폰트 관련 속성</h1>
+	<p class="c">페이커’ 이상혁이 700승 고지에 올라섰다. 13일부터 17일까지 서울 종로 그랑서울 롤파크에
+		위치한 LCK 아레나에서 열린 ‘리그오브레전드(LoL) 챔피언스 코리아’(LCK) 4라운드 2주 차 경기에선 여러 선수들이
+		다양한 개인 기록을 달성했다.</p>
+	<p class="d">먼저, 이상혁은 LCK 최초로 통산 700승(세트 기준)을 달성했다. 2013년 데뷔 이래 13년
+		동안 T1의 미드 라이너 자리를 지켜온 살아있는 전설 ‘페이커’ 이상혁은 14일 열린 경기에서 팀 승리와 700승 기록
+		달성이라는 겹경사를 누렸다. 이날 T1은 ‘이동 통신사 라이벌’ KT롤스터를 2 대 0으로 꺾었다.</p>
+</body>
+</html>
